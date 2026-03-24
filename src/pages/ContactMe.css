@@ -94,6 +94,7 @@
     max-width: 95%;
     margin: 70px auto 20px;
     padding: 20px;
+    margin-top: 129px;
     border-radius: 8px;
   }
 
@@ -128,6 +129,7 @@
     max-width: 100%;
     margin: 70px 0 15px 0;
     padding: 15px;
+    margin-top: 129px
   }
 
   .general-contact-page h1 {

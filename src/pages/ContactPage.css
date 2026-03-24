@@ -1,5 +1,6 @@
 .contact-page {
   padding: 30px;
+  margin-top: 112px;
   max-width: 800px;
   margin: 50px auto;
   color: #fff;
@@ -12,6 +13,24 @@
   margin-bottom: 30px;
   font-size: 2rem;
   color: var(--blackColor);
+}
+
+@media (max-width: 1024px) {
+  .contact-page h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page h1 {
+    font-size: 1.3rem;
+  }
 }
 
 /* Product Summary Section */
