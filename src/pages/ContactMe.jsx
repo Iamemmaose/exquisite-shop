@@ -23,7 +23,7 @@ export default function ContactMe() {
 
   return (
     <div className="general-contact-page">
-      <h1>Contact Me</h1>
+      <h1>Contact Us</h1>
       <p>Have a question or just want to reach out? Fill the form below!</p>
 
       <form onSubmit={handleSubmit} className="contact-form">
