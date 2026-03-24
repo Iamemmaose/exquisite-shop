@@ -5,10 +5,16 @@ import './ContactPage.css'
 export default function ContactPage() {
   const location = useLocation();
   const { product } = location.state || {};
-  const [orderQuantity, setOrderQuantity] = useState(1); // start at 1
+  const [orderQuantity, setOrderQuantity] = useState({number: 1}); // start at 1
   const [message, setMessage] = useState('');
 
   if (!product) return <p>No product selected. Go back and select a product first.</p>;
+
+  function handleNuumberChange(e) {
+    setOrderQuantity({
+      number: e.target.value
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +32,7 @@ export default function ContactPage() {
           <p><strong>Category:</strong> {product.category}</p>
           <p><strong>Unit Price:</strong> ${product.price}</p>
           <p><strong>Stock:</strong> {product.stock}</p>
-          <p><strong>Total Price:</strong> ${product.price * orderQuantity}</p> {/* Live total */}
+          <p><strong>Total Price:</strong> ${product.price * orderQuantity.number}</p> {/* Live total */}
         </div>
       </div>
 
@@ -36,11 +42,8 @@ export default function ContactPage() {
           <input
             type="number"
             min="1" // prevent 0 or negative numbers
-            value={orderQuantity}
-            onChange={(e) => {
-              const value = Number(e.target.value);
-              setOrderQuantity(value < 1 ? 1 : value); // enforce minimum 1
-            }}
+            value={orderQuantity.number}
+            onChange={handleNuumberChange}
           />
         </label>
 
@@ -54,7 +57,7 @@ export default function ContactPage() {
         </label>
 
         <button type="submit">
-          Send Request (${product.price * orderQuantity}) {/* Live total in button */}
+          Send Request (${product.price * orderQuantity.number}) {/* Live total in button */}
         </button>
       </form>
     </div>
