@@ -1,0 +1,153 @@
+.general-contact-page {
+  max-width: 700px;
+  margin: 50px auto;
+  margin-top: 80px;
+  padding: 30px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.general-contact-page h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--whiteColor);
+  font-size: 2rem;
+}
+
+.general-contact-page p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: var(--whiteColor);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .general-contact-page {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .general-contact-page h1 {
+    font-size: 1.7rem;
+  }
+
+  .general-contact-page p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .general-contact-page {
+    max-width: 95%;
+    margin: 70px auto 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .general-contact-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .general-contact-page p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* Prevent zoom on iOS */
+    padding: 10px;
+  }
+
+  .contact-form button {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .general-contact-page {
+    max-width: 100%;
+    margin: 70px 0 15px 0;
+    padding: 15px;
+  }
+
+  .general-contact-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .general-contact-page p {
+    font-size: 0.85rem;
+  }
+
+  .contact-form label {
+    font-size: 13px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    margin-top: 5px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+  }
+}
