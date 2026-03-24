@@ -1,16 +1,28 @@
-# React + Vite
+Project Summary:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern e-commerce web application built as a product catalog and ordering platform. It fetches product data from the DummyJSON API and allows users to browse, filter, view details, and submit product inquiries.
 
-Currently, two official plugins are available:
+Tech Stack:
+Framework: React 19.2.0
+Build Tool: Vite 7.3.1
+Routing: React Router 7.13.1
+Styling: Custom CSS
+Linting: ESLint 9.39.1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features:
+Product Browsing: Homepage displays all products; category pages for Beauty, Fragrances, Furniture, and Groceries.
+Product Details: Full product info, reviews, and ability to add new reviews.
+Inquiry System: Product-specific contact forms (pre-filled with product data) and a general contact form.
+Responsive Design: Layout adjusts for different screen sizes.
 
-## React Compiler
+Structure:
+Components: Header, Product cards, ProductDetail.
+Pages: AllProduct (homepage), category pages, ContactPage, ContactMe.
+Data: Fetched from https://dummyjson.com/products with loading/error handling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+User Flow:
+Browse products on homepage or category pages.
+View product details and reviews.
+Submit inquiries via contact forms.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The app serves as a product showcase where customers can explore items and request purchases through forms.
