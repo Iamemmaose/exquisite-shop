@@ -25,4 +25,4 @@ Browse products on homepage or category pages.
 View product details and reviews.
 Submit inquiries via contact forms.
 
-The app serves as a product showcase where customers can explore items and request purchases through forms.
+The website serves as a product showcase where customers can explore items and request purchases through forms.
